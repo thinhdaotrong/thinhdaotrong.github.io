@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f5f5f5;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  margin-top: 100px;
+  border-radius: 1rem;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.navbar {
+  height: 100px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar.small {
+  height: 60px;
+  background: #fff;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-item.active .nav-link::before {
+  left: 0;
+}
+
+.nav-item:hover .nav-link::before {
+  left: 0;
+}
+
+.nav-link {
+  font-size: 15px;
+  font-weight: 400;
+  position: relative;
+  padding: 0.5rem 0 !important;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.nav-link::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #2eca7f;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: 0.25s ease-in-out;
+}
+
+.home .main-title {
+  background: #2eca7f;
+  border-radius: 1rem 1rem 0 0;
+  color: #fff;
+}
+
+.home .desc {
+  background: #fff;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.home .avatar {
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home .avatar:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.15);
+}
+
+.home img {
+  width: 100%;
+}
+
+.home .main-title h1 {
+  font-size: 54px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin: 5rem 0 0;
+}
+
+.home .main-title span {
+  font-size: 18px;
+  margin: 0.5rem 0;
+  display: block;
+}
+
+.home .main-title a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff;
+  color: #9e9e9e;
+  margin: 0 0.2rem;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home .main-title a:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.home .main-title i {
+  line-height: 36px;
+}
+
+.about-me .block-title h3 {
+  font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.about-me p {
+  margin-top: 20px;
+}
+
+.desc .download-resume .btn {
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.desc .download-resume .btn:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.desc .infor-list {
+  font-size: 15px;
+}
+
+.infor-list li {
+  margin: 16px 0;
+}
+
+.infor-list li .title {
+  width: 100px;
+  display: inline-block;
+}
+
+.infor-list li .value {
+  color: #9e9e9e;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #9e9e9e;
+  text-align: center;
+  height: 36px;
+}
+
+/* style contact */
+
+.block-header {
+  background: #2eca7f;
+  border-radius: 1rem 1rem 0 0;
+  color: #fff;
+}
+
+.block-header h2 {
+  font-size: 44px;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.content {
+  background: #fff;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.contact .content h3 {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+.contact .content h3 span {
+  color: #2eca7f;
+}
+
+.contact .content li {
+  margin: 15px 0;
+}
+
+.contact .content li .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fafafa;
+  color: #2eca7f;
+  display: inline-block;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.contact .content li .icon i {
+  line-height: 36px;
+}
+
+.contact .content li .value {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* style button scroll to top */
+
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  background: #2eca7f;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.scroll-top i {
+  line-height: 40px;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
