@@ -83,8 +83,8 @@ section {
 }
 
 .home .avatar {
-  width: 280px;
-  height: 280px;
+  max-width: 280px;
+  max-height: 280px;
   overflow: hidden;
   border: 3px solid #fff;
   transition: 0.3s ease-in-out;
