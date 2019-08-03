@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var resumePosition = document.querySelector('#resume').offsetTop - 50;
     var productsPosition = document.querySelector('#products').offsetTop - 50;
-    var contactPosition = document.querySelector('#contact').offsetTop - 50;    
+    var contactPosition = document.querySelector('#contact').offsetTop - 50;
 
     window.addEventListener("scroll", function () {
-        let scrollStatus = "not-ok" ;
         if (window.pageYOffset > 0) {
             if (status === ">0") {
                 navbar.classList.add("navbar-small");
@@ -21,15 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 btnScrollToTop.classList.remove("show");
                 status = ">0";
             }
-        }
+        };
+        
         if (window.pageYOffset >= 0 && window.pageYOffset < resumePosition) {
-            if(scrollStatus === "not-ok"){
-                for (let i = 0; i < navLink.length; i++) {
-                    navLink[i].classList.remove("active");
-                }
-                navLink[0].classList.add("active");
+            for (let i = 0; i < navLink.length; i++) {
+                navLink[i].classList.remove("active");
             }
-            scrollStatus = "ok";
+            navLink[0].classList.add("active");
         }
         if (window.pageYOffset >= resumePosition && window.pageYOffset < productsPosition) {
             for (let i = 0; i < navLink.length; i++) {
