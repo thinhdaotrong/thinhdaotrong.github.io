@@ -12,7 +12,8 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
 }
-a{
+
+a {
   cursor: pointer;
 }
 
@@ -233,6 +234,7 @@ section {
   color: #fff;
   background: #2eca7f;
 }
+
 .products-filter li.active a:hover {
   color: #fff;
   background: #2eca7f;
@@ -249,104 +251,233 @@ section {
   border-radius: 3px;
   transition: 0.25s ease-in-out;
 }
-.products-list{
+
+.products-list {
   display: flex;
   flex-wrap: wrap;
 }
+
 .products-item {
   width: 32.5%;
   margin: 0 5px 5px 0;
+  overflow: hidden;
 }
-.products-item a{
+
+.products-item a {
   text-decoration: none;
 }
 
-.bg-item::before{
-  content: "";
+.bg-item {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  opacity: 0;
   visibility: hidden;
-  transition: 0.2s ease-in-out;
 }
-.products-item:nth-child(odd) .bg-item::before{
-  background: #2ecc71;
+
+.products-item:nth-child(odd) .bg-item {
+  background: #2ecc70b6;
 }
-.products-item:nth-child(even) .bg-item::before{
-  background: #9b59b6;
+
+.products-item:nth-child(even) .bg-item {
+  background: #9b59b6b6;
 }
-.bg-item .line-top{
+
+.bg-item .line-top {
   width: 90%;
   height: 2px;
   position: absolute;
   left: 5%;
   top: 5%;
 }
-.bg-item .line-bottom{
+
+.bg-item .line-bottom {
   width: 90%;
   height: 2px;
   position: absolute;
   left: 5%;
   bottom: 5%;
 }
-.bg-item .line-left{
+
+.bg-item .line-left {
   height: 90%;
   width: 2px;
   position: absolute;
   left: 5%;
   top: 5%;
 }
-.bg-item .line-right{
+
+.bg-item .line-right {
   height: 90%;
   width: 2px;
   position: absolute;
   right: 5%;
   top: 5%;
 }
-.bg-item .line{
+
+.bg-item .line {
   background: #fff;
   opacity: 0;
   transform: scale(0);
-  transition: 0.35s ease-in-out;
 }
-.bg-item h5{
+
+.bg-item h5 {
   color: #fff;
   position: absolute;
   top: 45%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  opacity: 0;
+  transform: translate(-50%, -50%);
   font-weight: 700;
   font-size: 1rem;
-  opacity: 0;
-  transition: 0.35s ease-in-out;
 }
-.bg-item small{
+
+.bg-item small {
   color: #fff;
   position: absolute;
+  opacity: 0;
   top: 60%;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0;
-  transition: 0.35s ease-in-out;
 }
-.products-item:hover h5{
+
+.products-item:hover h5 {
   opacity: 1;
   top: 50%;
+  transition: 0.3s 0.3s;
 }
-.products-item:hover small{
+
+.products-item:hover small {
   opacity: 1;
   top: 55%;
+  transition: 0.3s 0.3s;
 }
-.products-item:hover .line{
+
+.products-item:hover .line {
   opacity: 1;
   transform: scale(1);
+  transition: 0.25s linear 0.3s;
 }
-.products-item:hover .bg-item::before{
-  opacity: 0.7;
-  visibility: visible;
+
+.products-item.from-left .bg-item {
+  animation: form-left 0.35s forwards;
+}
+
+@-webkit-keyframes form-left {
+  0% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.products-item.from-right .bg-item {
+  animation: form-right 0.35s forwards;
+}
+
+@-webkit-keyframes form-right {
+  0% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}
+
+.products-item.from-top .bg-item {
+  animation: form-top 0.35s forwards;
+}
+
+@-webkit-keyframes form-top {
+  0% {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.products-item.from-bottom .bg-item {
+  animation: form-bottom 0.35s forwards;
+}
+
+@-webkit-keyframes form-bottom {
+  0% {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+}
+
+.products-item.to-left .bg-item {
+  animation: to-left 0.35s forwards;
+}
+
+@-webkit-keyframes to-left {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+}
+
+.products-item.to-right .bg-item {
+  animation: to-right 0.35s forwards;
+}
+
+@-webkit-keyframes to-right {
+  0% {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+}
+
+.products-item.to-top .bg-item {
+  animation: to-top 0.35s forwards;
+}
+
+@-webkit-keyframes to-top {
+  0% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%);
+    visibility: hidden;
+  }
+}
+
+.products-item.to-bottom .bg-item {
+  animation: to-bottom 0.35s forwards;
+}
+
+@-webkit-keyframes to-bottom {
+  0% {
+    transform: translateY(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(100%);
+    visibility: hidden;
+  }
 }
 
 /* end prodcuts */
