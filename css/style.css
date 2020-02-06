@@ -268,7 +268,7 @@ section {
 /* products */
 .products-filter {
   display: flex;
-  width: 400px;
+  width: 300px;
   margin: auto;
   margin-bottom: 3rem;
   justify-content: space-between;
