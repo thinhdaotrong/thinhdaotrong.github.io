@@ -1,0 +1,252 @@
+body{
+	font-family: "roboto";
+}
+a{
+	font-family: "roboto medium";
+	color: #000;
+	display: block;
+}
+p{
+	font-size: 15px;
+	color: #3f3f3f;
+	text-align: justify;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/*style header*/
+#header{
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 30px;
+}
+#logo{
+	width: 113px;
+}
+#logo img{
+	padding: 15.5px 0px;
+	margin-right: 47px;
+}
+#main-menu li{
+	float: left;
+}
+#main-menu li a{
+	font-size: 16px;
+	color: #000;
+	padding: 22px 20px;
+	transition: ease-in-out 0.25s;
+}
+#main-menu li:hover a{
+	color: #fff;
+	background: #01a050;
+}
+#search-box{
+	border: 1px solid #e1e1e1;
+	border-radius: 3px;
+	margin-top: 16px;
+}
+#search-box .search{
+	border: none;
+	font-family: "roboto light";
+	font-style: italic;
+	font-size: 13px;
+	line-height: 33px;
+	padding-left: 15px;
+	width: 136px;
+
+}
+#search-box button{
+	border: none;
+	background: #fff;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+#search-box i{
+	font-size: 13px;
+	color: #a3a3a3;
+}
+/*style sidebar*/
+#sidebar{
+	width: 337px;
+	padding-left: 30px;
+
+}
+.ads{
+	width: 307px;
+}
+#sidebar p{
+	font-family: "roboto medium";
+	font-size: 21px;
+	color: #000;
+	padding: 50px 0px 20px;
+	border-bottom: 1px solid #01a050;
+	margin-bottom: 20px;
+}
+
+.list-post li{
+	float: left;
+	padding-bottom: 20px;
+}
+.list-post .post-thumb{
+	width: 127px;
+	float: left;
+	margin-right: 20px;
+}
+
+.list-post .post-title{
+	font-family: "roboto medium";
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+
+#content{
+	width: 831px;
+	padding-right: 30px;
+	border-right: 1px solid #f5f5f5;
+}
+.post .thumb{
+	width: 405px;
+	float: left;
+	margin-right: 30px;
+}
+#cover .list-post .post-thumb{
+	width: 120px;
+}
+.post .title{
+	font-size: 24px;
+	line-height: 33px;
+}
+.post p{
+	line-height: 27px;
+}
+#cover .list-post{
+	padding-top: 30px;
+}
+#cover .list-post li a{
+	font-family: "roboto";
+	font-weight: bold;
+}
+#cover .list-post li{
+	width: 405px;
+}
+#cover .title{
+	padding-bottom: 20px;
+}
+/*style feature*/
+#feature{
+	border-top: 1px solid #01a050;
+	margin-top: 20px;
+}
+#feature .post-thumb{
+	width: 250px;
+}
+#feature li{
+	padding: 40px 0px 0px;
+}
+#feature .post-title{
+	font-family: "roboto";
+	font-size: 20px;
+	line-height: 26px;
+}
+#feature p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #464646;
+}
+#feature .time{
+	font-size: 12px;
+	color: #959595;
+}
+.page-number{
+	width: 300px;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+.page-number .btn{
+	background: #fff;
+	font-size: 13px;
+	color: #000;
+	border: 1px solid #dedede;
+	padding: 8.5px 13px;
+	cursor: pointer;
+}
+.page-number button.active, .page-number button:hover{
+	background: #01a050;
+	color: #fff;
+}
+
+/*style footer*/
+#footer{
+	background: #01a050;
+	margin-top: 80px;
+}
+#footer #about, #category, #feature-news{
+	float: left;
+}
+#footer #fanpage{
+	float: right;
+}
+#footer #about{
+	width: 254px;
+	margin-right: 75px;
+}
+#footer #category{
+	width: 124px;
+	margin-right: 110px;
+}
+#footer #feature-news{
+	width: 296px
+}
+#footer #fanpage{
+	width: 280px;
+}
+#footer .thumb-fanpage{
+	width: 280px;
+}
+#footer .thumb-fanpage .fb-page{
+	max-width: 100%;
+	height: auto;
+}
+#footer .widget-title{
+	font-family: "roboto medium";
+	font-size: 21px;
+	line-height: 21px;
+	color: #fff;
+	padding: 47px 0px 36px;
+}
+#footer #about p{
+	line-height: 24px;
+	color: #fff;
+	padding-bottom: 24px;
+}
+#footer li a{
+	font-family: "roboto";
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+	padding-bottom: 20px;
+	padding-left: 24px;
+}
+#footer li{
+	position: relative;
+}
+#footer li a:before{
+	content: "\f105";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 0px;
+	top: -1px;
+	font-size: 14px;
+	color: #fff;
+}
+/*style coryright*/
+#copyright p{
+	font-size: 14px;
+	color: #454545;
+	background: #fff;
+	text-align: center;
+	padding: 15px 0px;
+}

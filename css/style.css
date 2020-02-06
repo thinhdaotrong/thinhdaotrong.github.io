@@ -17,6 +17,7 @@ a {
   cursor: pointer;
 }
 
+
 section {
   margin-top: 100px;
   border-radius: 1rem;
@@ -224,7 +225,7 @@ section {
 
 .products-filter {
   display: flex;
-  width: 240px;
+  width: 400px;
   margin: auto;
   margin-bottom: 3rem;
   justify-content: space-between;
